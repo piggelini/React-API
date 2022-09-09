@@ -11,13 +11,13 @@ export default function UserInfo({ user, getUser, userId }) {
         }
     }, []);
 
-    const { email, adress } = user;
+
 
     return (
-        <div >
-            <p>User:{userId}</p>
-            <p>E-mail:{email}</p>
-            <p>City:{adress.city}</p>
-        </div>
+        < div >
+            <p>User: {userId}</p>
+            <p>E-mail: {user?.email}</p>
+            <p>City: {user?.address.city}</p>
+        </div >
     )
 }

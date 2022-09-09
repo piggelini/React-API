@@ -19,7 +19,7 @@ function App() {
   return (
     <>
       {posts && posts.map((post) => {
-        return <Post title={post.title} text={post.body} userId={post.id} />
+        return <Post title={post.title} text={post.body} userId={post.userId} />
       })}
 
     </>
